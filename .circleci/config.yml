@@ -23,7 +23,7 @@ jobs:
           command: . build/install_dependencies.sh
       - save_cache:
           key: dependency-cache-{{ checksum "package.json "}}
-          path:
+          paths:
             - node_modules
       - run:
           name: Login to Org
@@ -47,7 +47,7 @@ jobs:
             command: . build/install_dependencies.sh
         - save_cache:
             key: dependency-cache-{{ checksum "package.json "}}
-            path:
+            paths:
               - node_modules
         - run:
             name: Login to Org
@@ -71,7 +71,7 @@ jobs:
             command: . build/install_dependencies.sh
         - save_cache:
             key: dependency-cache-{{ checksum "package.json "}}
-            path:
+            paths:
               - node_modules
         - run:
             name: Login to Org
