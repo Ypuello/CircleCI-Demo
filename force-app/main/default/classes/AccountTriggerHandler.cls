@@ -29,7 +29,7 @@ public without sharing class AccountTriggerHandler {
             if(!isCloseDateNull) insert opportunityList;
             
         }catch(MyCustomException e){
-            throw new MyCustomException('This is going to fail.',  e);
+            throw new MyCustomException('Changes mades',  e);
         }
         
         
